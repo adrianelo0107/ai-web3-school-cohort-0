@@ -44,6 +44,8 @@ This is my public AI x Web3School learning repository for handbook notes, daily 
 | `submissions/` | Manual submission checklist and copied final drafts |
 | `templates/` | Reusable templates |
 | `scripts/` | Local helper scripts |
+| `config/learning-reminder.json` | Daily reminder schedule and course/task source |
+| `docs/reminders.md` | Windows scheduled reminder setup |
 
 ## Current Next Actions
 
@@ -51,3 +53,18 @@ This is my public AI x Web3School learning repository for handbook notes, daily 
 2. Update `daily/2026-05-17.md` with the actual lesson link and completion evidence.
 3. Pick one hackathon/product research problem for the first 7-day sprint.
 4. Capture at least one Handbook feedback item after the first focused reading session.
+
+## Daily Reminders
+
+This repo includes a Windows Task Scheduler reminder workflow:
+
+```powershell
+.\scripts\install-learning-reminder-task.ps1
+```
+
+Default reminders:
+
+- 09:00: today's course and task plan
+- 21:30: check-in status
+
+See `docs/reminders.md` for testing, editing, and uninstalling.

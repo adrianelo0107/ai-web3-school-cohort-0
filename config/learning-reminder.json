@@ -1,0 +1,50 @@
+{
+  "timezone": "Asia/Shanghai",
+  "defaultCourse": {
+    "title": "WCB Learning 今日课程（登录后确认）",
+    "url": "https://web3career.build/zh/programs/AI-Web3-School",
+    "handbookTitle": "AI x Web3School Handbook",
+    "handbookUrl": "https://aiweb3.school/zh/handbook/"
+  },
+  "reminders": [
+    {
+      "name": "daily-plan",
+      "time": "09:00",
+      "mode": "Plan",
+      "enabled": true
+    },
+    {
+      "name": "checkin-status",
+      "time": "21:30",
+      "mode": "Checkin",
+      "enabled": true
+    }
+  ],
+  "plan": [
+    {
+      "date": "2026-05-17",
+      "course": "初始化个人学习计划、GitHub 学习仓库、每日打卡草稿和 Handbook feedback 流程",
+      "courseUrl": "https://aiweb3.school/zh/handbook/",
+      "handbookSection": "Handbook 总览",
+      "handbookUrl": "https://aiweb3.school/zh/handbook/",
+      "tasks": [
+        "确认 WCB Learning 今日课程/任务",
+        "阅读 Handbook 总览并记录 3-5 条笔记",
+        "更新 daily/2026-05-17.md 打卡草稿",
+        "记录至少 1 个 Handbook feedback candidate"
+      ]
+    }
+  ],
+  "fallbackTasks": [
+    "登录 WCB Learning 确认今日课程/任务",
+    "阅读 Handbook 35 分钟并记录 3-5 条笔记",
+    "推进 Hackathon/产品研究 30 分钟",
+    "完成或更新 daily/{date}.md 打卡草稿",
+    "提交前检查：无 secrets、API keys、私钥、助记词或私密账号信息"
+  ],
+  "checkin": {
+    "dailyPathTemplate": "daily/{date}.md",
+    "courseConfirmedPattern": "- [x] Confirm exact WCB lesson/task",
+    "submittedPattern": "- [x] Submit manually"
+  }
+}

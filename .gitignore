@@ -10,6 +10,6 @@ private/
 node_modules/
 dist/
 build/
+.local/
 .DS_Store
 Thumbs.db
-

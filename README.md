@@ -56,7 +56,7 @@ This is my public AI x Web3School learning repository for handbook notes, daily 
 
 ## Daily Reminders
 
-This repo includes a Windows Task Scheduler reminder workflow:
+This repo includes a Windows Task Scheduler reminder workflow that reads WCB platform data and sends WeChat reminders:
 
 ```powershell
 .\scripts\install-learning-reminder-task.ps1
@@ -64,7 +64,7 @@ This repo includes a Windows Task Scheduler reminder workflow:
 
 Default reminders:
 
-- 09:00: today's course and task plan
-- 21:30: check-in status
+- 09:00: today's WCB course and task plan
+- 21:30: WCB check-in status
 
 See `docs/reminders.md` for testing, editing, and uninstalling.

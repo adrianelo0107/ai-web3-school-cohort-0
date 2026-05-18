@@ -1,5 +1,16 @@
 {
   "timezone": "Asia/Shanghai",
+  "wcb": {
+    "baseUrl": "https://web3career.build",
+    "programSlug": "AI-Web3-School",
+    "learningUrl": "https://web3career.build/zh/programs/AI-Web3-School?tab=learning",
+    "profileUrl": "https://web3career.build/zh/profile"
+  },
+  "weixin": {
+    "stateDir": null,
+    "accountId": null,
+    "recipientScopeId": null
+  },
   "defaultCourse": {
     "title": "WCB Learning 今日课程（登录后确认）",
     "url": "https://web3career.build/zh/programs/AI-Web3-School",

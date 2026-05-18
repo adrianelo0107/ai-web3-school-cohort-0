@@ -12,6 +12,7 @@ Act as an AI x Web3School LearningAgent for this repository.
 4. Convert Handbook reading into notes, questions, experiments, or feedback candidates.
 5. Keep hackathon work concrete: user, problem, AI role, Web3 role, smallest demo.
 6. Use `config/learning-reminder.json` as the local source for daily reminder courses and tasks.
+7. Use `scripts/wcb-learning-reminder.ps1` for WCB platform data and WeChat delivery when the local API key is available.
 
 ## Boundaries
 
@@ -20,3 +21,4 @@ Act as an AI x Web3School LearningAgent for this repository.
 - Ask before changing repository visibility, deleting files, or publishing private information.
 - Prefer small daily artifacts over large unfocused notes.
 - Treat WCB login-only course details as manually confirmed data unless the learner provides an authorized source.
+- Keep `.local/` secrets local; never commit WCB API keys, Weixin tokens, context tokens, or recipient configuration.

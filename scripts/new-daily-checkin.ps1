@@ -11,8 +11,7 @@ if (Test-Path -LiteralPath $target) {
   exit 0
 }
 
-$content = Get-Content -LiteralPath $template -Raw
+$content = Get-Content -LiteralPath $template -Encoding UTF8 -Raw
 $content = $content -replace "YYYY-MM-DD", $Date
 Set-Content -LiteralPath $target -Value $content -Encoding UTF8
 Write-Host "Created: $target"
-

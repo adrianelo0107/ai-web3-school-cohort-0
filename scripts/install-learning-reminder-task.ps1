@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $configPath = Join-Path $repoRoot "config/learning-reminder.json"
-$reminderScript = Join-Path $PSScriptRoot "daily-learning-reminder.ps1"
+$reminderScript = Join-Path $PSScriptRoot "wcb-learning-reminder.ps1"
 
 if (-not (Test-Path -LiteralPath $configPath)) {
   throw "Missing config file: $configPath"
@@ -27,7 +27,7 @@ foreach ($reminder in @($config.reminders)) {
 
   $taskName = "$TaskPrefix-$($reminder.name)"
   $at = [datetime]::Today.Add([TimeSpan]::Parse($reminder.time))
-  $argument = "-NoProfile -ExecutionPolicy Bypass -File `"$reminderScript`" -Mode $($reminder.mode) -Notify -CreateDaily"
+  $argument = "-NoProfile -ExecutionPolicy Bypass -File `"$reminderScript`" -Mode $($reminder.mode) -SendWeixin -CreateDaily"
   $action = New-ScheduledTaskAction -Execute $powershell -Argument $argument -WorkingDirectory $repoRoot
   $trigger = New-ScheduledTaskTrigger -Daily -At $at
   $description = "Daily AI x Web3School learning reminder ($($reminder.mode)) at $($reminder.time)."

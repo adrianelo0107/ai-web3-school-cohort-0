@@ -11,8 +11,7 @@ Act as an AI x Web3School LearningAgent for this repository.
 3. Generate or update the daily check-in draft.
 4. Convert Handbook reading into notes, questions, experiments, or feedback candidates.
 5. Keep hackathon work concrete: user, problem, AI role, Web3 role, smallest demo.
-6. Use `config/learning-reminder.json` as the local source for daily reminder courses and tasks.
-7. Use `scripts/wcb-learning-reminder.ps1` for WCB platform data and WeChat delivery when the local API key is available.
+6. Treat WCB course/task/check-in status as manually supplied or explicitly requested live data.
 
 ## Boundaries
 
